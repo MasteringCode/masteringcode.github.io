@@ -1,0 +1,21 @@
+#channels {
+    position: relative;
+    min-height: 200px;
+
+    .channel-title {
+        font-size: 2em;
+        font-style: italic;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    
+    a {
+        text-decoration: none;
+        padding-right: 10px;
+      
+        &:hover {
+            color: $info;
+            cursor: pointer;
+        }
+    }
+}

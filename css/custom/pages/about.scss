@@ -1,0 +1,25 @@
+#staff-list{
+    position: relative;
+    min-height: 200px;
+  
+    .list-title {
+        font-size: 2em;
+        font-style: italic;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+  
+    .event-kind {
+      float: left;
+    }
+  
+    .member-img {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .member-title {
+      font-size: 1.5em;
+      margin-left: 10px;
+    }
+  }

@@ -1,0 +1,72 @@
+---
+layout: default_no_banner
+title: Eventi
+permalink: /events/
+---
+
+<section id="eventlist">
+  <div class="container">
+
+    <div class="row  mt-4">
+      <div class="list-title col text-info">
+        Eventi in programma
+      </div>
+    </div>
+
+    {% assign todo_event_cards = site.event_cards | where:'completed','false' | sort: 'date' | reverse %}
+    {% for event in todo_event_cards %}
+      <div class="row py-2">
+        <div class="col-md-12">
+          <div class="event-kind">
+            {% if event.kind == 'meetup' %}
+              <img class="eventkind-img" src="/assets/images/meetup_icon.png" />
+            {% elsif event.kind == 'lab' %}
+              <img class="eventkind-img" src="/assets/images/handsonlab_icon.png" />
+            {% else %}
+              <img class="eventkind-img" src="/assets/images/conference_icon.png" />
+            {% endif %}  
+          </div>
+          <a class="event-title" href="{{ event.registration_url }}" target="_blank">
+              {{ event.kind | capitalize }}: {{ event.title }}
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img class="event-img img-thumbnail" src = "/assets/images{{ event.id }}.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <p>{{ event.content | markdownify }}</p>
+        </div>
+      </div>
+    {% endfor %}
+
+    <div class="row">
+      <div class="list-title col text-info">
+          Eventi recenti
+      </div>
+    </div>
+
+    {% assign completed_event_cards = site.event_cards | where:'completed','true'  | sort: 'date' | reverse %}
+    {% for event in completed_event_cards %}
+      <div class="row py-2">
+        <div class="col-md-12">
+          <div class="event-kind">
+              {% if event.kind == 'meetup' %}
+              <img class="eventkind-img" src="/assets/images/meetup_icon.png" />
+            {% else if event.kind == 'lab' %}
+              <img class="eventkind-img" src="/assets/images/handsonlab_icon.png" />
+            {% else %}
+              <img class="eventkind-img" src="/assets/images/conference_icon.png" />
+            {% endif %}  
+          </div>
+          <a class="event-title" href="{{ event.url }}">
+              {{ event.kind | capitalize }}: {{ event.title }}
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

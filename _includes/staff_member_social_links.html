@@ -1,0 +1,25 @@
+<div class="social-links">
+    {% if page.blog_url != null %}
+    <a target="_blank" href="{{ page.blog_url }}">
+        <i class="fa fa-globe fa-2x"></i>
+    </a>   
+    {% endif %}
+
+    {% if page.linkedin != null %}
+    <a target="_blank" href="https://it.linkedin.com/in/{{ page.linkedin }}">
+        <i class="fab fa-linkedin fa-2x"></i>
+    </a>   
+    {% endif %}
+
+    {% if page.github != null %}
+    <a target="_blank" href="https://github.com/{{ page.github }}">
+        <i class="fab fa-github fa-2x"></i>
+    </a>
+    {% endif %}
+
+    {% if page.twitter != null %}
+    <a target="_blank" href="https://twitter.com/{{ page.twitter }}">
+        <i class="fab fa-twitter fa-2x"></i>
+    </a>
+    {% endif %}
+</div>

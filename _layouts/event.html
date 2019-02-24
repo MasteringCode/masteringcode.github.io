@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+{% include head.html %}
+<body>
+    {% include header.html %}
+    <section id="event">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-md-12">
+                    <div class="event-kind">
+                    {% if page.kind == 'meetup' %}
+                        <img class="eventkind-img" src="/assets/images/meetup_icon.png" />
+                    {% elsif page.kind == 'lab' %}
+                        <img class="eventkind-img" src="/assets/images/handsonlab_icon.png" />
+                    {% else %}
+                        <img class="eventkind-img" src="/assets/images/conference_icon.png" />
+                    {% endif %}  
+                    </div>
+                    <span class="event-title"">
+                        {{ page.title }}
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-left">
+                <img class="event-img img-thumbnail" src = "/assets/images{{ page.id }}.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <p>{{ content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include footer.html %}
+</body>
+</html>

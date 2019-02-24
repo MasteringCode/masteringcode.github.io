@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+---
+
+<section id="mchome">
+   <div class="container">
+
+        <div class="row pt-4">
+            <div class="col">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for item in site.data.carousel_img_list %}
+                            {% if forloop.index == 1 %}
+                            <div class="carousel-item active">
+                            {% else %}
+                            <div class="carousel-item">
+                            {% endif %}
+                                <img class="d-block w-90" src="assets/images/carousel/{{ item.source }}" alt="{{ item.title }}">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+

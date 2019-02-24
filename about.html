@@ -1,0 +1,36 @@
+---
+layout: default_no_banner
+title: Chi siamo
+permalink: /about/
+---
+
+<section id="staff-list">
+  <div class="container">
+
+    <div class="row  mt-4">
+      <div class="list-title col text-info">
+        Chi siamo
+      </div>
+    </div>
+
+    <table>
+        <tbody>
+          {% for staff_member in site.staff_members %}
+          <tr>
+            <td class="align-middle py-2">
+                <img class="rounded-circle img-thumbnail member-img"
+                src = "/assets/images/staff_images/{{ staff_member.image }}.png" />
+            </td>
+            <td class="align-middle pl-2">
+                <a href="{{ staff_member.url }}">
+                    {{ staff_member.name }} <br/>
+                    {{ staff_member.position }} - {{ staff_member.company }}
+                  </a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+  </div>
+</section>

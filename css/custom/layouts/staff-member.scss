@@ -1,0 +1,31 @@
+#staff-member{
+position: relative;
+min-height: 200px;
+margin-top: 20px;
+
+.staff-member-title {
+    color: cornflowerblue;
+    font-size: 2em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.staff-member-img {
+    width: 200px;
+    height: 200px;
+}
+
+.staff-member-kind {
+    float: left;
+}
+
+.staff-memberkind-img {
+    height: 40px;
+    width: auto;
+}
+
+.staff-member-title {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+}

@@ -1,0 +1,21 @@
+#initiatives{
+    position: relative;
+    min-height: 200px;
+
+    .initiative-title {
+        font-size: 2em;
+        font-style: italic;
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+
+    .community-img {
+        height: 60px;
+        width: auto;
+    }
+    
+    .community-name {
+    font-size: 1.5em;
+    margin-left: 10px;
+    }
+}

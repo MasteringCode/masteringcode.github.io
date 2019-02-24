@@ -1,0 +1,57 @@
+[
+    {
+        "name": "UGIdotNET",
+        "logo": "UGIdotNET.png",
+        "web_site_url": "https://www.ugidotnet.org/"
+    },
+    {
+        "name": "DomusDotNet",
+        "logo": "DomusDotNet.png",
+        "web_site_url": "http://www.domusdotnet.com/"
+    },
+    {
+        "name": "DotNetPodcast",
+        "logo": "DotNetPodcast.png",
+        "web_site_url": "http://dotnetpodcast.com/"
+    },
+    {
+        "name": "DotDotNet",
+        "logo": "DotDotNet.png",
+        "web_site_url": "http://dotdotnet.org/"
+    },
+    {
+        "name": "DotNetAbruzzo",
+        "logo": "DotNetAbruzzo.png",
+        "web_site_url": "http://www.dotnetabruzzo.org/"
+    },
+    {
+        "name": "DotNetCampania",
+        "logo": "DotNetCampania.png",
+        "web_site_url": "https://www.dotnetcampania.org/"
+    },
+    {
+        "name": "DotNetCode",
+        "logo": "DotNetCode.png",
+        "web_site_url": "http://www.dotnetcode.it/"
+    },
+    {
+        "name": "DotNetLombardia",
+        "logo": "DotNetLombardia.png",
+        "web_site_url": "https://www.dotnetlombardia.org/"
+    },
+    {
+        "name": "DotNetMarche",
+        "logo": "DotNetMarche.png",
+        "web_site_url": "http://www.dotnetmarche.org/"
+    },
+    {
+        "name": "DotNetToscana",
+        "logo": "DotNetToscana.png",
+        "web_site_url": "http://www.dotnettoscana.org/"
+    },
+    {
+        "name": "GetLatestVersion",
+        "logo": "GetLatestVersion.png",
+        "web_site_url": "http://www.getlatestversion.it/"
+    }
+]

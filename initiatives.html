@@ -1,0 +1,40 @@
+---
+layout: default_no_banner
+title: Initiatives
+---
+
+<section id="initiatives">
+    <div class="container">
+
+        <div class="row">
+            <div class="col initiative-title text-info">
+                Collaborazioni
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                La nostra community collabora e partecipa a diverse iniziative ed eventi realizzate da altre community italiane, tra le quali ci piace ricordare:<br/>
+            </div>
+        </div>
+
+        <table class="claim">
+            <tbody>
+                {% for community in site.data.communities %}
+                <tr>
+                    <td class="align-middle py-2">
+                        <img class="community-img"
+                        src = "/assets/images/communities/{{ community.logo }}" />
+                    </td>
+                    <td class="community-name align-middle pl-2">
+                        <a href="{{ community.web_site_url }}">
+                            {{ community.name }}
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </div>
+</section>

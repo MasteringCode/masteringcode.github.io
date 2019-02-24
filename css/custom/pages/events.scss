@@ -1,0 +1,29 @@
+#eventlist{
+  position: relative;
+  min-height: 200px;
+
+  .list-title {
+      font-size: 2em;
+      font-style: italic;
+      margin-top: 12px;
+      margin-bottom: 12px;
+  }
+
+  .event-img {
+    width: 400px;
+  }
+
+  .event-kind {
+    float: left;
+  }
+
+  .eventkind-img {
+    height: 40px;
+    width: auto;
+  }
+
+  .event-title {
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+}
