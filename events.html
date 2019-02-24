@@ -43,13 +43,16 @@ permalink: /events/
       </div>
     {% endfor %}
 
+    {% assign completed_event_cards = site.event_cards | where:'completed','true'  | sort: 'date' | reverse %}
+
+    {% if completed_event_cards.first %}
     <div class="row">
       <div class="list-title col text-info">
           Eventi recenti
       </div>
     </div>
+    {% endif %}
 
-    {% assign completed_event_cards = site.event_cards | where:'completed','true'  | sort: 'date' | reverse %}
     {% for event in completed_event_cards %}
       <div class="row py-2">
         <div class="col-md-12">
