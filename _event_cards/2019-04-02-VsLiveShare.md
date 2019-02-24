@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "Visual Studio Live Share"
-event_date: 20190315
+event_date: 20190402
 kind: meetup
 location: LUISS EnLabs
 registration_url: https://www.eventbrite.it/e/biglietti-devopswork-2019-53471685250
