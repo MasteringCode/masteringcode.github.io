@@ -11,7 +11,7 @@ completed: false
 
 
 
-<h6>Visual Studio Live Share: where all begin!</h6>
+<h6>Collaborazione remota con Visual Studio Live Share</h6>
 
 In questo primo evento della community presentiamo Visual Studio Live Share, un potente strumento di collaborazione remota che consente di lavorare in gruppo su un medesimo progetto. Mostreremo come grazie a VS Live Share sia possibile partecipare in modo attivo al nuovo format di meetup che vogliamo introdurre con la nostra community, dove l'esperto di dominio (ovvero il master) lavora con gli altri partecipanti alla realizzazione di un progetto. Per ovvi motivi di gestione solo alcuni potranno partecipare attivamente, ma tutti gli altri, in sola lettura, saranno in grado di seguire sia dalla proiezione in sala dello schermo del Master, sia il lavoro di ciascun altro partecipante attivo tramite il proprio PC collegato in sola lettura via VS Live Share.
 
